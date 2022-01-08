@@ -138,6 +138,7 @@ nav .logo img {
   .line {
     width: 4px;
     height: 4px;
+    border-radius: 50%;
     background-color: var(--grayish-blue);
     margin-left: 0.55rem;
     transform: translate(0, 00.55rem);
