@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@200;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --barlow-condensed: "Barlow Condensed", sans-serif; /* 400, 700 */
+  --barlow: "Barlow", sans-serif; /* 400 */
+  font-size: 18px;
+  --very-dark-blue: hsl(230, 29%, 20%);
+  --dark-grayish-blue: hsl(230, 11%, 40%);
+  --grayish-blue: hsl(231, 7%, 65%);
+  --light-grayish-blue: hsl(207, 33%, 95%);
+  --red: hsl(0, 100%, 68%);
+}
+
+body,
+html {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 0.066rem;
+  font-family: var(--barlow-condensed);
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.background {
+  width: 55%;
+  position: absolute;
+  height: 23.61rem;
+  background-color: var(--light-grayish-blue);
+  border-bottom-left-radius: 3.33rem;
+  right: 0;
+  z-index: -5;
+}
+
+/* 
+==========================================================================
+==========================================================================
+=========================== NAV ==========================================
+==========================================================================
+==========================================================================
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.11rem 1.77rem;
+}
+
+nav .logo img {
+  width: 1.33rem;
+  height: 1.33rem;
+}
+
+.close-btn {
+  display: none;
+}
+
+.links {
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 90%;
+  height: 13rem;
+  padding: 2rem 0.5rem;
+  background-color: white;
+  text-transform: uppercase;
+  transform: translate(-86%, 15%);
+}
+
+.accent {
+  color: var(--grayish-blue);
+}
+
+.line {
+  border: 1px solid var(--grayish-blue);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.show.links {
+  display: block;
+}
+
+.show.close-btn {
+  display: block;
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .links {
+    transform: translate(-89%, 15%);
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .links {
+    transform: translate(-91%, 15%);
+  }
+}
+
+/* 
+==========================================================================
+==========================================================================
+=========================== MAIN =========================================
+==========================================================================
+==========================================================================
+*/
+
+.hero-illustration {
+  margin-top: 0.7rem;
+  margin-bottom: 4rem;
+}
+
+.hero-illustration img {
+  width: 26.77rem;
+  height: 13.27rem;
+}
+
+.main-text {
+  padding: 1.5rem 1.2rem;
+}
+
+.main-text .new {
+  padding: 0.27rem 0.38rem;
+  background-color: var(--very-dark-blue);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.055rem;
+  border-radius: 0.72rem;
+  text-align: center;
+  margin-right: 0.4rem;
+}
+
+.main-text h2 {
+  display: flex;
+  align-items: center;
+  color: var(--dark-grayish-blue);
+  font-size: 0.833rem;
+  font-family: var(--barlow-condensed);
+  font-weight: 400;
+  letter-spacing: 0.27rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.main-text h1 {
+  font-size: 2rem;
+  line-height: 2.22rem;
+  font-family: var(--barlow-condensed);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--very-dark-blue);
+  margin-bottom: 0.7rem;
+}
+
+.main-text h3 {
+  font-size: 1rem;
+  font-family: var(--barlow);
+  line-height: 1.44rem;
+  font-weight: 400;
+  color: var(--very-dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns p {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-family: var(--barlow-condensed);
+  font-weight: 400;
+  color: var(--grayish-blue);
+  letter-spacing: 0.138rem;
+}
+
+.btns button {
+  width: 7.5rem;
+  height: 2rem;
+  background-color: var(--red);
+  color: white;
+  border-radius: 0.27rem;
+  border: transparent;
+  outline: transparent;
+  text-transform: uppercase;
+  font-size: 0.77rem;
+  font-family: var(--barlow-condensed);
+  font-weight: 700;
+  letter-spacing: 0.0516rem;
+}
+
+@media screen and (min-width: 375px) {
+  .main-text {
+    padding: 1.7rem 1.77rem;
+  }
+
+  .main-text h1 {
+    font-size: 2.22rem;
+  }
+
+  .btns p {
+    font-size: 0.7rem;
+  }
+
+  .btns button {
+    width: 8rem;
+    height: 2.22rem;
+  }
+}
