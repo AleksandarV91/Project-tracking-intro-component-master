@@ -117,6 +117,77 @@ nav .logo img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .links li {
+    margin-left: 0.55rem;
+  }
+
+  .links ul {
+    display: flex;
+  }
+
+  .links {
+    display: block;
+    background-color: transparent;
+    transform: translate(-45%, -15%);
+  }
+
+  .line {
+    width: 4px;
+    height: 4px;
+    background-color: var(--grayish-blue);
+    margin-left: 0.55rem;
+    transform: translate(0, 00.55rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .background {
+    height: 23.72rem;
+  }
+
+  nav {
+    padding: 3.55rem 9rem;
+  }
+
+  nav .logo {
+    width: 1.77rem;
+    height: 1.77rem;
+  }
+
+  .links {
+    transform: translate(-25%, -15%);
+  }
+
+  .links a {
+    font-size: 0.83rem;
+    letter-spacing: 0.055rem;
+  }
+
+  .links a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .links li {
+    margin-left: 1rem;
+  }
+
+  .line {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .background {
+    width: 45%;
+  }
+}
+
 /* 
 ==========================================================================
 ==========================================================================
@@ -227,5 +298,81 @@ nav .logo img {
   .btns button {
     width: 8rem;
     height: 2.22rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btns {
+    display: flex;
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-left: 75rem;
+  }
+
+  .hero-illustration img {
+    width: 45.88rem;
+    height: 23.277rem;
+  }
+
+  .main-text h1 {
+    width: 350px;
+  }
+
+  .main-text h3 {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding-left: 8rem;
+    margin-left: 0;
+  }
+
+  .hero-illustration {
+    transform: translate(20%, 50px);
+  }
+
+  .main-text h1 {
+    font-size: 3.55rem;
+    line-height: 3.55rem;
+    width: 470px;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-text h2 {
+  }
+
+  .main-text h3 {
+    padding-right: 12rem;
+    line-height: 1.44rem;
+    font-size: 1rem;
+  }
+
+  .btns {
+    padding-right: 5rem;
+  }
+
+  .btns button {
+    width: 10.22rem;
+    height: 2.66rem;
+    letter-spacing: 0.059rem;
+    font-size: 0.88rem;
+  }
+
+  .btns button:hover {
+    cursor: pointer;
+    background-color: hsla(0, 100%, 68%, 0.7);
   }
 }
